@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  color: #121212;
+}
+#header {
+  background-color: #fff;
+  border-bottom: solid #e7e7e7 1px;
+}
+#header .nav-transparent .nav-default {
+  width: 1200px;
+  height: 71px;
+  margin: 0 auto;
+}
+#header .nav-transparent .nav-default .nav-left {
+  float: left;
+  height: 65px;
+  padding: 15px 0;
+}
+#header .nav-transparent .nav-default .nav-left:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+#header .nav-transparent .nav-default .nav-right {
+  height: 42px;
+  margin-top: 13px;
+  float: right;
+}
+#header .nav-transparent .nav-default .nav-right:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+#header .nav-transparent .nav-default .nav-right li {
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 15px;
+}
+#header .nav-transparent .nav-default .nav-right li:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+#header .nav-transparent .nav-default .nav-right li:first-child {
+  margin-right: 50px;
+  vertical-align: top;
+}
+#header .nav-transparent .nav-default .nav-right li:last-child {
+  margin-right: 10px;
+}
+#header .nav-transparent .nav-default .nav-right li:last-child a {
+  padding: 4px 6px;
+  color: #fff;
+  background: #e94840;
+  border-radius: 6px;
+}
+#header .nav-transparent .nav-default .nav-right li a {
+  font-weight: bold;
+  color: #121212;
+}
+#header .nav-transparent .nav-default .nav-right li a span {
+  font-weight: bold;
+  color: #121212;
+  vertical-align: top;
+}
+#header .nav-transparent .nav-default .nav-right li a span.city:hover {
+  color: #e94840;
+}
+#header .nav-transparent .nav-default .nav-right li a:hover {
+  color: #e94840;
+  transition: 0.5s;
+}
+#banner {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+#banner .slides {
+  width: 300%;
+}
+#banner .slides li {
+  height: 420px;
+  float: left;
+  overflow: hidden;
+  width: 1349px;
+}
+#banner .slides li .banner1 {
+  height: 420px;
+  background: url("../image/banner1.jpg") no-repeat center;
+}
+#banner .slides li .banner2 {
+  height: 420px;
+  background: url("../image/banner2.jpg") no-repeat center;
+}
+#banner .slides li .banner3 {
+  height: 420px;
+  background: url("../image/banner3.jpg") no-repeat center;
+}
+#banner .banner-nav {
+  width: 180px;
+  height: 420px;
+  position: absolute;
+  left: 104px;
+  top: 0;
+  background: #757881;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#banner .banner-nav .navname {
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+}
+#banner .banner-nav .navname > a {
+  display: inline-block;
+  height: 42px;
+  width: 180px;
+}
+#banner .banner-nav .navname > a:link {
+  color: #fff;
+}
+#banner .banner-nav .navname > a:hover {
+  background: #5c5f68;
+}
+#banner .banner-nav .navname img {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+#banner .banner-nav .navname ul {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  background: rgba(255,255,255,0.7);
+  width: 160px;
+  height: 420px;
+  display: none;
+}
+#banner .banner-nav .navname ul a:link {
+  color: #000;
+}
+#banner .banner-nav .navname ul a:hover {
+  color: #e94840;
+}
+#servers .servers-wrapper:nth-child(even) {
+  background: #fbf8f8;
+}
+#servers .servers-wrapper {
+  height: 566px;
+  padding: 60px 0;
+  text-align: center;
+}
+#servers .servers-wrapper .servers-nav {
+  width: 1200px;
+  height: 77px;
+  color: #3d3838;
+  position: relative;
+  margin: 0 auto;
+}
+#servers .servers-wrapper .servers-nav .servers-index {
+  font: 800 28px "Microsoft YaHei";
+}
+#servers .servers-wrapper .servers-nav .servers-type {
+  margin-top: 15px;
+  font-size: 22px;
+}
+#servers .servers-wrapper .servers-nav .servers-more {
+  position: absolute;
+  right: 0;
+  top: 66px;
+  color: #898989;
+  font-size: 18px;
+}
+#servers .servers-wrapper .serves-list-wrapper {
+  height: 345px;
+  width: 1200px;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list {
+  width: 230px;
+  height: 345px;
+  border: 1px solid #eaeaea;
+  padding-top: 10px;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list:hover {
+  box-shadow: 5px 5px 15px #ccc;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-img {
+  width: 210px;
+  height: 210px;
+  margin: 0 5px;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-Name {
+  padding: 10px 10px;
+  height: 28px;
+  color: #121212;
+  font-weight: 800;
+  text-align: start;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-description {
+  padding: 5px 10px;
+  width: 100%;
+  height: 58px;
+  font-size: 13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  color: #929292;
+  text-align: start;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price {
+  padding: 0 15px;
+  font-size: 14px;
+  color: #fb474f;
+  font-weight: bold;
+  text-align: start;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price :first-child {
+  font-size: 20px;
+}
+#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price :last-child {
+  padding: 6px 10px;
+  float: right;
+  color: #fff;
+  background: #fb474f;
+  border-radius: 8px;
+}

@@ -1,0 +1,192 @@
+// 引入文件
+@import "mixins.styl"
+*
+  box-sizing border-box
+body
+  width 100%
+  color: #121212
+// 头部
+  #header
+    background-color #fff
+    border-bottom solid #e7e7e7 1px
+    .nav-transparent
+      .nav-default
+        width 1200px
+        height 71px
+        margin 0 auto
+        .nav-left
+          float left
+          height 65px
+          clear-fixed()
+          padding 15px 0
+        .nav-right
+          height 42px
+          margin-top 13px
+          float right
+          clear-fixed()
+          li
+            float left
+            line-height 20px
+            text-align center
+            clear-fixed()
+            padding 10px 15px
+            &:first-child
+              margin-right 50px
+              vertical-align top
+            &:last-child
+              margin-right 10px
+              a
+                padding 4px 6px
+                color #fff
+                background #e94840
+                border-radius 6px
+            a
+              font-weight bold
+              color #121212
+              span
+                font-weight bold
+                color #121212
+                vertical-align top
+                &.city:hover
+                  color #e94840
+              &:hover
+                color #e94840
+                transition .5s
+// banner
+  #banner
+    height 420px
+    position relative
+    overflow hidden
+    .slides
+      width 300%
+      li
+        height 420px
+        float left
+        overflow hidden
+        width 1349px
+        .banner1
+          height 420px
+          background url(../image/banner1.jpg) no-repeat center;
+        .banner2
+          height 420px
+          background url(../image/banner2.jpg) no-repeat center;
+        .banner3
+          height 420px
+          background url(../image/banner3.jpg) no-repeat center;
+    .banner-nav
+      width 180px
+      height 420px
+      position absolute
+      left 104px
+      top 0
+      background: #757881;
+      font-size 16px
+      text-align center
+      font-weight bold
+      letter-spacing 2px
+      .navname
+        height 42px
+        line-height 42px
+        position relative
+        & > a
+          display inline-block
+          height 42px
+          width 180px
+          &:link
+            color #fff
+          &:hover
+            background #5c5f68
+        img
+          position absolute
+          left 150px
+          top 20px
+        ul
+          position absolute
+          left 180px
+          top 0
+          background rgba(255,255,255,0.7)
+          width 160px
+          height 420px
+          display none
+          a
+            &:link
+              color #000000
+            &:hover
+              color #e94840
+
+
+
+// serves
+  #servers
+    .servers-wrapper:nth-child(even)
+      background #FBF8F8
+    .servers-wrapper
+      height 566px
+      padding 60px 0
+      text-align center
+      .servers-nav
+        width 1200px
+        height 77px
+        color #3d3838
+        position relative
+        margin 0 auto
+        .servers-index
+          font 800 28px "Microsoft YaHei"
+        .servers-type
+          margin-top 15px
+          font-size 22px
+        .servers-more
+          position absolute
+          right 0
+          top 66px
+          color #898989
+          font-size 18px
+      .serves-list-wrapper
+        height 345px
+        width 1200px
+        padding-top 30px
+        margin 0 auto
+        display flex
+        justify-content space-between
+        .servers-list
+          width 230px
+          height 345px
+          border 1px solid #eaeaea
+          padding-top 10px
+          &:hover
+            box-shadow 5px 5px 15px #ccc
+          .servers-list-img
+            width 210px
+            height 210px
+            margin 0 5px
+          .servers-list-Name
+            padding 10px 10px
+            height 28px
+            color #121212
+            font-weight 800
+            text-align start
+          .servers-list-description
+            padding 5px 10px
+            width 100%
+            height 58px
+            font-size 13px
+            line-height 18px
+            text-overflow ellipsis
+            color #929292
+            text-align start
+          .servers-list-price
+            padding 0 15px
+            font-size 14px
+            color #fb474f
+            font-weight bold
+            text-align start
+            :first-child
+              font-size 20px
+            :last-child
+              padding 6px 10px
+              float right
+              color #ffffff
+              background #fb474f
+              border-radius 8px
+
+
