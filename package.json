@@ -1,0 +1,26 @@
+{
+  "name": "daoway_pc",
+  "version": "1.0.0",
+  "description": "仿到位项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyr01/daoway_pc.git"
+  },
+  "keywords": [
+    "daoway",
+    "Dyr"
+  ],
+  "author": "Dyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dyr01/daoway_pc/issues"
+  },
+  "homepage": "https://github.com/Dyr01/daoway_pc#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
