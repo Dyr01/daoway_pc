@@ -56,7 +56,7 @@ body {
 #header .nav-transparent .nav-default .nav-right li:last-child a {
   padding: 4px 6px;
   color: #fff;
-  background: red1;
+  background: #e94840;
   border-radius: 6px;
 }
 #header .nav-transparent .nav-default .nav-right li a {
@@ -69,10 +69,10 @@ body {
   vertical-align: top;
 }
 #header .nav-transparent .nav-default .nav-right li a span.city:hover {
-  color: red1;
+  color: #e94840;
 }
 #header .nav-transparent .nav-default .nav-right li a:hover {
-  color: red1;
+  color: #e94840;
   transition: 0.5s;
 }
 #services {
@@ -177,7 +177,7 @@ body {
   padding: 20px 0 8px;
 }
 #promise .promise-top h2 span {
-  color: red1;
+  color: #e94840;
 }
 #promise .promise-top p {
   font-size: 22px;
