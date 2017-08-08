@@ -56,7 +56,7 @@ body {
 #header .nav-transparent .nav-default .nav-right li:last-child a {
   padding: 4px 6px;
   color: #fff;
-  background: #e94840;
+  background: red1;
   border-radius: 6px;
 }
 #header .nav-transparent .nav-default .nav-right li a {
@@ -69,190 +69,100 @@ body {
   vertical-align: top;
 }
 #header .nav-transparent .nav-default .nav-right li a span.city:hover {
-  color: #e94840;
+  color: red1;
 }
 #header .nav-transparent .nav-default .nav-right li a:hover {
-  color: #e94840;
+  color: red1;
   transition: 0.5s;
 }
-#banner {
-  position: relative;
-  overflow: hidden;
-}
-#banner .slides {
-  width: 300%;
-  overflow: hidden;
-}
-#banner .slides li {
-  height: 420px;
-  float: left;
-  overflow: hidden;
-  width: 33.3333%;
-}
-#banner .slides li div {
-  height: 420px;
-}
-#banner .slides li .banner1 {
-  background: url("../image/banner1.jpg") no-repeat center;
-}
-#banner .slides li .banner2 {
-  background: url("../image/banner2.jpg") no-repeat center;
-}
-#banner .slides li .banner3 {
-  background: url("../image/banner3.jpg") no-repeat center;
-}
-#banner .pagination {
-  width: 40px;
-  height: 10px;
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  z-index: 9999;
-  display: flex;
-  justify-content: space-between;
-}
-#banner .pagination .pointer {
-  width: 10px;
-  height: 10px;
-  background: #a6a6a6;
-  float: left;
-  border-radius: 50%;
-}
-#banner .pagination .pointer.active {
-  background: #e94840;
-}
-#banner .banner-nav {
-  width: 180px;
-  height: 420px;
-  position: absolute;
-  left: 104px;
-  top: 0;
-  background: #757881;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-#banner .banner-nav .navname {
-  height: 42px;
-  line-height: 42px;
-  position: relative;
-}
-#banner .banner-nav .navname > a {
-  display: inline-block;
-  height: 42px;
-  width: 180px;
-}
-#banner .banner-nav .navname > a:link {
-  color: #fff;
-}
-#banner .banner-nav .navname > a:hover {
-  background: #5c5f68;
-}
-#banner .banner-nav .navname img {
-  position: absolute;
-  left: 150px;
-  top: 20px;
-}
-#banner .banner-nav .navname ul {
-  position: absolute;
-  left: 180px;
-  top: 0;
-  background: rgba(255,255,255,0.7);
-  width: 160px;
-  height: 420px;
-  display: none;
-}
-#banner .banner-nav .navname ul a:link {
-  color: #000;
-}
-#banner .banner-nav .navname ul a:hover {
-  color: #e94840;
-}
-#servers .servers-wrapper:nth-child(even) {
+#services {
   background: #fbf8f8;
+  overflow: hidden;
 }
-#servers .servers-wrapper {
-  height: 566px;
-  padding: 60px 0;
-  text-align: center;
-}
-#servers .servers-wrapper .servers-nav {
+#services .services-des {
   width: 1200px;
-  height: 77px;
-  color: #3d3838;
-  position: relative;
-  margin: 0 auto;
+  margin: 30px auto 0;
+  color: #121212;
+  font: 700 18px "Microsoft YaHei";
 }
-#servers .servers-wrapper .servers-nav .servers-index {
-  font: 800 28px "Microsoft YaHei";
-}
-#servers .servers-wrapper .servers-nav .servers-type {
-  margin-top: 15px;
-  font-size: 22px;
-}
-#servers .servers-wrapper .servers-nav .servers-more {
-  position: absolute;
-  right: 0;
-  top: 66px;
-  color: #898989;
-  font-size: 18px;
-}
-#servers .servers-wrapper .serves-list-wrapper {
-  height: 345px;
+#services .services-list-wrapper {
   width: 1200px;
   padding-top: 30px;
   margin: 0 auto;
+  position: relative;
+}
+#services .services-list-wrapper .services-list {
+  width: 970px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list {
+#services .services-list-wrapper .services-list .services-list-item-wrapper {
   width: 230px;
-  height: 345px;
+  height: 300px;
+  margin: 0 10px 10px 0;
   border: 1px solid #eaeaea;
-  padding-top: 10px;
+  padding: 10px;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list:hover {
+#services .services-list-wrapper .services-list .services-list-item-wrapper:hover {
   box-shadow: 5px 5px 15px #ccc;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-img {
+#services .services-list-wrapper .services-list .services-list-item-wrapper .services-list-img {
   width: 210px;
   height: 210px;
-  margin: 0 5px;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-Name {
-  padding: 10px 10px;
-  height: 28px;
+#services .services-list-wrapper .services-list .services-list-item-wrapper .services-list-Name {
+  height: 26px;
+  font-size: 18x;
   color: #121212;
-  font-weight: 800;
-  text-align: start;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-description {
-  padding: 5px 10px;
-  width: 100%;
-  height: 58px;
-  font-size: 13px;
-  line-height: 18px;
-  text-overflow: ellipsis;
+#services .services-list-wrapper .services-list .services-list-item-wrapper .services-list-des {
+  font-size: 12px;
   color: #929292;
-  text-align: start;
+  overflow: hidden;
 }
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price {
-  padding: 0 15px;
-  font-size: 14px;
-  color: #e94840;
-  font-weight: bold;
-  text-align: start;
-}
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price :first-child {
-  font-size: 20px;
-}
-#servers .servers-wrapper .serves-list-wrapper .servers-list .servers-list-price :last-child {
-  padding: 6px 10px;
+#services .services-list-wrapper .services-list .services-list-item-wrapper .services-list-des :last-child {
   float: right;
-  color: #fff;
-  background: #e94840;
-  border-radius: 8px;
+}
+#services .services-list-wrapper .jiameng {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+#services .services-list-wrapper .erweima {
+  width: 230px;
+  height: 290px;
+  background: url("../image/tuijianfuwushang_06.jpg") no-repeat center;
+  position: absolute;
+  top: 340px;
+  right: 0;
+  text-align: center;
+  line-height: 330px;
+}
+#services .services-list-wrapper .erweima img {
+  width: 130px;
+  height: 130px;
+}
+#services .services-list-wrapper .services-more {
+  width: 970px;
+  height: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services .services-list-wrapper .services-more p {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 16px;
+  color: #b1b1b1;
+  text-align: center;
+  line-height: 50px;
 }
 #promise {
   height: 250px;
@@ -267,7 +177,7 @@ body {
   padding: 20px 0 8px;
 }
 #promise .promise-top h2 span {
-  color: #e94840;
+  color: red1;
 }
 #promise .promise-top p {
   font-size: 22px;

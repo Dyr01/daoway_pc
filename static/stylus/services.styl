@@ -1,7 +1,6 @@
 // 引入文件
 @import "mixins.styl"
-//  赋值
-red1 = #e94840
+
 *
   box-sizing border-box
 body
@@ -13,9 +12,9 @@ body
     position relative
     border-bottom solid #e7e7e7 1px
     .nav-transparent
-      //position fixed
-      //top 0
-      //left 0
+    //position fixed
+    //top 0
+    //left 0
       .nav-default
         width 1200px
         height 71px
@@ -58,156 +57,81 @@ body
               &:hover
                 color red1
                 transition .5s
-// banner
-  #banner
-    position relative
+// 服务商
+  #services
+    background #FBF8F8
     overflow hidden
-    .slides
-      width 300%
-      overflow hidden
-      li
-        height 420px
-        float left
-        overflow hidden
-        width 33.3333%
-        div
-          height 420px
-        .banner1
-          background url(../image/banner1.jpg) no-repeat center;
-        .banner2
-          background url(../image/banner2.jpg) no-repeat center;
-        .banner3
-          background url(../image/banner3.jpg) no-repeat center;
-    .pagination
-      width 40px
-      height 10px
-      position absolute
-      left 50%
-      bottom 15px
-      z-index 9999
-      display flex
-      justify-content space-between
-      .pointer
-        width 10px
-        height 10px
-        background #a6a6a6
-        float left
-        border-radius 50%
-        &.active
-          background red1
-    .banner-nav
-      width 180px
-      height 420px
-      position absolute
-      left 104px
-      top 0
-      background: #757881;
-      font-size 16px
-      text-align center
-      font-weight bold
-      letter-spacing 2px
-      .navname
-        height 42px
-        line-height 42px
-        position relative
-        & > a
-          display inline-block
-          height 42px
-          width 180px
-          &:link
-            color #fff
-          &:hover
-            background #5c5f68
-        img
-          position absolute
-          left 150px
-          top 20px
-        ul
-          position absolute
-          left 180px
-          top 0
-          background rgba(255,255,255,0.7)
-          width 160px
-          height 420px
-          display none
-          a
-            &:link
-              color #000000
-            &:hover
-              color red1
-// serves
-  #servers
-    .servers-wrapper:nth-child(even)
-      background #FBF8F8
-    .servers-wrapper
-      height 566px
-      padding 60px 0
-      text-align center
-      .servers-nav
-        width 1200px
-        height 77px
-        color #3d3838
-        position relative
-        margin 0 auto
-        .servers-index
-          font 800 28px "Microsoft YaHei"
-        .servers-type
-          margin-top 15px
-          font-size 22px
-        .servers-more
-          position absolute
-          right 0
-          top 66px
-          color #898989
-          font-size 18px
-      .serves-list-wrapper
-        height 345px
-        width 1200px
-        padding-top 30px
-        margin 0 auto
+    .services-des
+      width 1200px
+      margin 30px auto 0
+      color #121212
+      font 700 18px "Microsoft YaHei"
+    .services-list-wrapper
+      width 1200px
+      padding-top 30px
+      margin 0 auto
+      position relative
+      .services-list
+        width 970px
         display flex
         justify-content space-between
-        .servers-list
+        flex-wrap wrap
+        .services-list-item-wrapper
           width 230px
-          height 345px
+          height 300px
+          margin 0 10px 10px 0
           border 1px solid #eaeaea
-          padding-top 10px
+          padding 10px
           &:hover
-            box-shadow 5px 5px 15px #ccc
-          .servers-list-img
+           box-shadow 5px 5px 15px #ccc
+          .services-list-img
             width 210px
             height 210px
-            margin 0 5px
-          .servers-list-Name
-            padding 10px 10px
-            height 28px
+          .services-list-Name
+            height 26px
+            font-size 18x
             color #121212
-            font-weight 800
-            text-align start
-          .servers-list-description
-            padding 5px 10px
-            width 100%
-            height 58px
-            font-size 13px
-            line-height 18px
-            text-overflow ellipsis
+            font-weight 700
+            margin 15px 0 5px 0
+          .services-list-des
+            font-size 12px
             color #929292
-            text-align start
-          .servers-list-price
-            padding 0 15px
-            font-size 14px
-            color red1
-            font-weight bold
-            text-align start
-            :first-child
-              font-size 20px
+            overflow hidden
             :last-child
-              padding 6px 10px
               float right
-              color #ffffff
-              background red1
-              border-radius 8px
-
+      .jiameng
+        position absolute
+        top 30px
+        right 0
+      .erweima
+        width 230px
+        height 290px
+        background url(../image/tuijianfuwushang_06.jpg) no-repeat center
+        position absolute
+        top 340px
+        right 0
+        text-align center
+        line-height 330px
+        img
+          width 130px
+          height 130px
+      .services-more
+        width 970px
+        height 152px
+        display flex
+        justify-content center
+        align-items center
+        p
+          width 200px
+          height 50px
+          margin 0 auto
+          border 1px solid #e5e5e5
+          border-radius 5px
+          background #fff
+          font-size 16px
+          color #b1b1b1
+          text-align center
+          line-height 50px
 // promise
   #promise
     height 250px
@@ -237,7 +161,7 @@ body
 // footer
   #footer
     height 310px
-//热门城市
+  //热门城市
     .hot-city
       height 120px
       width 1200px
