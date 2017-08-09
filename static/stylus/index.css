@@ -245,40 +245,42 @@ body {
 #banner .banner-nav .navname {
   height: 42px;
   line-height: 42px;
-  position: relative;
+  z-index: 10;
 }
-#banner .banner-nav .navname > a {
+#banner .banner-nav .navname .nav-tog {
   display: inline-block;
   height: 42px;
   width: 180px;
+  position: relative;
 }
-#banner .banner-nav .navname > a:link {
+#banner .banner-nav .navname .nav-tog img {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+}
+#banner .banner-nav .navname .nav-tog:link {
   color: #fff;
 }
-#banner .banner-nav .navname > a:hover {
+#banner .banner-nav .navname .nav-tog:hover {
   background: #5c5f68;
 }
-#banner .banner-nav .navname > a:visited {
+#banner .banner-nav .navname .nav-tog:visited {
   color: #fff;
 }
-#banner .banner-nav .navname img {
-  position: absolute;
-  left: 150px;
-  top: 20px;
-}
-#banner .banner-nav .navname ul {
+#banner .banner-nav .navname .nav-tog-box {
   position: absolute;
   left: 180px;
   top: 0;
   background: rgba(255,255,255,0.7);
   width: 160px;
   height: 420px;
+  overflow: visible;
   display: none;
 }
-#banner .banner-nav .navname ul a:link {
+#banner .banner-nav .navname .nav-tog-box a:link {
   color: #000;
 }
-#banner .banner-nav .navname ul a:hover {
+#banner .banner-nav .navname .nav-tog-box a:hover {
   color: #e94840;
 }
 #servers .servers-wrapper:nth-child(even) {

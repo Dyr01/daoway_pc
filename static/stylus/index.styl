@@ -51,28 +51,30 @@ body
       .navname
         height 42px
         line-height 42px
-        position relative
-        & > a
+        z-index 10
+        .nav-tog
           display inline-block
           height 42px
           width 180px
+          position relative
+          img
+            position absolute
+            right 32px
+            top 16px
           &:link
             color #fff
           &:hover
             background #5c5f68
           &:visited
             color #fff
-        img
-          position absolute
-          left 150px
-          top 20px
-        ul
+        .nav-tog-box
           position absolute
           left 180px
           top 0
           background rgba(255,255,255,0.7)
           width 160px
           height 420px
+          overflow: visible;
           display none
           a
             &:link

@@ -108,3 +108,10 @@
       prevPlay();
     });
   });
+
+  // 侧栏导航切换
+  $(function () {
+    $('#banner .navname').hover(function () {
+      $(this).children('.nav-tog-box').toggle()
+    })
+  })
