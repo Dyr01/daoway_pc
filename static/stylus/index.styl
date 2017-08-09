@@ -1,107 +1,49 @@
 // 引入文件
 @import "mixins.styl"
-//  赋值
-red1 = #e94840
-*
-  box-sizing border-box
+@import "public.styl"
+
 body
   width 100%
   color: #121212
-// 头部
-  #header
-    background-color #fff
-    position relative
-    border-bottom solid #e7e7e7 1px
-    .nav-transparent
-      //position fixed
-      //top 0
-      //left 0
-      .nav-default
-        width 1200px
-        height 71px
-        margin 0 auto
-        .nav-left
-          float left
-          height 65px
-          clear-fixed()
-          padding 15px 0
-        .nav-right
-          height 42px
-          margin-top 13px
-          float right
-          clear-fixed()
-          li
-            float left
-            line-height 20px
-            text-align center
-            clear-fixed()
-            padding 10px 15px
-            &:first-child
-              margin-right 50px
-              vertical-align top
-            &:last-child
-              margin-right 10px
-              a
-                padding 4px 6px
-                color #fff
-                background red1
-                border-radius 6px
-            a
-              font-weight bold
-              color #121212
-              span
-                font-weight bold
-                color #121212
-                vertical-align top
-                &.city:hover
-                  color red1
-              &:hover
-                color red1
-                transition .5s
 // banner
   #banner
     position relative
     overflow hidden
-    .slides
-      width 300%
+    .full-banner
+      width 100%
+      position relative
       overflow hidden
-      li
-        height 420px
-        float left
-        overflow hidden
-        width 33.3333%
-        div
+      ul
+        position absolute
+        li
+          width 100%
           height 420px
-        .banner1
-          background url(../image/banner1.jpg) no-repeat center;
-        .banner2
-          background url(../image/banner2.jpg) no-repeat center;
-        .banner3
-          background url(../image/banner3.jpg) no-repeat center;
-    .pagination
-      width 40px
-      height 10px
-      position absolute
-      left 50%
-      bottom 15px
-      z-index 9999
-      display flex
-      justify-content space-between
-      .pointer
-        width 10px
-        height 10px
-        background #a6a6a6
-        float left
-        border-radius 50%
-        &.active
-          background red1
+          float left
+          background  no-repeat center center
+      ol
+        height 20px
+        position absolute
+        left 50%
+        bottom 30px
+        padding 0 10px
+        border-radius 10px
+        li
+          width 10px
+          height 10px
+          float left
+          margin 5px 5px
+          background #747474
+          border-radius 50%
+          cursor pointer
+          .current
+            background rgba(255,255,255,1)
     .banner-nav
       width 180px
       height 420px
       position absolute
       left 104px
       top 0
-      background: #757881;
+      background #757881
       font-size 16px
       text-align center
       font-weight bold
@@ -118,6 +60,8 @@ body
             color #fff
           &:hover
             background #5c5f68
+          &:visited
+            color #fff
         img
           position absolute
           left 150px
@@ -207,86 +151,3 @@ body
               color #ffffff
               background red1
               border-radius 8px
-
-// promise
-  #promise
-    height 250px
-    padding 60px 0 50px
-    text-align center
-    .promise-top
-      height 90px
-      h2
-        font 800 30px "Microsoft YaHei"
-        padding 20px 0 8px
-        span
-          color red1
-      p
-        font-size 22px
-    .promise-bottom
-      height 50px
-      display flex
-      justify-content center
-      font-size 18px
-      div
-        padding 20px 35px 0 0
-        &:last-child
-          padding-right 0
-      img
-        vertical-align middle
-        margin-right 10px
-// footer
-  #footer
-    height 310px
-//热门城市
-    .hot-city
-      height 120px
-      width 1200px
-      margin 0 auto
-      .hot
-        width 72px
-        font 700 18px "Microsoft YaHei"
-        float left
-        margin-right 30px
-        clear-fixed()
-      .city-list
-        width 1098px
-        font 200 16px "Microsoft YaHei"
-        color #898989
-        float left
-        clear-fixed()
-        i
-          display inline-block
-          font-style normal
-          width 9%
-          line-height 30px
-          text-align center
-    .partner-wrapper
-      background #f8f8f8
-      overflow hidden
-      .partner-des
-        width 1200px
-        margin 20px auto
-        color #121212
-        font 700 18px "Microsoft YaHei"
-      .partner
-        width 1200px
-        margin 0 auto
-        li
-          width 120px
-          height 60px
-          background #fff
-          margin-left 12px
-          margin-bottom 20px
-          text-align center
-          line-height 100px
-          float left
-          clear-fixed()
-          &:nth-child(9n+1)
-            margin-left 0
-          img
-            width 100px
-      .copyright
-        width 1200px
-        margin 10px auto
-        font-size 14px
-        color #757881

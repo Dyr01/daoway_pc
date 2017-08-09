@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  color: #121212;
+}
+#header {
+  background-color: #fff;
+  position: relative;
+  border-bottom: solid #e7e7e7 1px;
+}
+#header .nav-transparent .nav-default {
+  width: 1200px;
+  height: 71px;
+  margin: 0 auto;
+}
+#header .nav-transparent .nav-default .nav-left {
+  float: left;
+  height: 65px;
+  padding: 15px 0;
+}
+#header .nav-transparent .nav-default .nav-right {
+  height: 42px;
+  margin-top: 13px;
+  float: right;
+}
+#header .nav-transparent .nav-default .nav-right li {
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 15px;
+}
+#header .nav-transparent .nav-default .nav-right li:first-child {
+  margin-right: 50px;
+  vertical-align: top;
+}
+#header .nav-transparent .nav-default .nav-right li:last-child {
+  margin-right: 10px;
+}
+#header .nav-transparent .nav-default .nav-right li:last-child a {
+  padding: 4px 6px;
+  color: #fff;
+  background: #e94840;
+  border-radius: 6px;
+}
+#header .nav-transparent .nav-default .nav-right li a {
+  font-weight: bold;
+  color: #121212;
+}
+#header .nav-transparent .nav-default .nav-right li a span {
+  font-weight: bold;
+  color: #121212;
+  vertical-align: top;
+}
+#header .nav-transparent .nav-default .nav-right li a span.city:hover {
+  color: #e94840;
+}
+#header .nav-transparent .nav-default .nav-right li a:hover {
+  color: #e94840;
+  transition: 0.5s;
+}

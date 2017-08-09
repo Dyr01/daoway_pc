@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-* em {
-  font-style: normal;
-}
 body {
   width: 100%;
   color: #121212;
@@ -77,6 +74,123 @@ body {
 #header .nav-transparent .nav-default .nav-right li a:hover {
   color: #e94840;
   transition: 0.5s;
+}
+#promise {
+  height: 250px;
+  padding: 60px 0 50px;
+  text-align: center;
+}
+#promise .promise-top {
+  height: 90px;
+}
+#promise .promise-top h2 {
+  font: 800 30px "Microsoft YaHei";
+  padding: 20px 0 8px;
+}
+#promise .promise-top h2 span {
+  color: #e94840;
+}
+#promise .promise-top p {
+  font-size: 22px;
+}
+#promise .promise-bottom {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+#promise .promise-bottom div {
+  padding: 20px 35px 0 0;
+}
+#promise .promise-bottom div:last-child {
+  padding-right: 0;
+}
+#promise .promise-bottom img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#footer {
+  height: 310px;
+}
+.hot-city {
+  height: 120px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.hot-city .hot {
+  width: 72px;
+  font: 700 18px "Microsoft YaHei";
+  float: left;
+  margin-right: 30px;
+}
+.hot-city .hot:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+.hot-city .city-list {
+  width: 1098px;
+  font: 200 16px "Microsoft YaHei";
+  color: #898989;
+  float: left;
+}
+.hot-city .city-list:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+.hot-city .city-list i {
+  display: inline-block;
+  font-style: normal;
+  width: 9%;
+  line-height: 30px;
+  text-align: center;
+}
+.partner-wrapper {
+  background: #f8f8f8;
+  overflow: hidden;
+}
+.partner-wrapper .partner-des {
+  width: 1200px;
+  margin: 20px auto;
+  color: #121212;
+  font: 700 18px "Microsoft YaHei";
+}
+.partner-wrapper .partner {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.partner-wrapper .partner li {
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  margin-left: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+}
+.partner-wrapper .partner li:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+.partner-wrapper .partner li:nth-child(9n+1) {
+  margin-left: 0;
+}
+.partner-wrapper .partner li img {
+  width: 100px;
+}
+.copyright {
+  width: 1200px;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #757881;
+}
+body {
+  width: 100%;
+  color: #121212;
 }
 #fuwu {
   background: #f8f8f8;
@@ -372,116 +486,4 @@ body {
 #fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num.acv a,
 #fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num:hover a {
   color: #fff;
-}
-#promise {
-  height: 250px;
-  padding: 60px 0 50px;
-  text-align: center;
-}
-#promise .promise-top {
-  height: 90px;
-}
-#promise .promise-top h2 {
-  font: 800 30px "Microsoft YaHei";
-  padding: 20px 0 8px;
-}
-#promise .promise-top h2 span {
-  color: #e94840;
-}
-#promise .promise-top p {
-  font-size: 22px;
-}
-#promise .promise-bottom {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-}
-#promise .promise-bottom div {
-  padding: 20px 35px 0 0;
-}
-#promise .promise-bottom div:last-child {
-  padding-right: 0;
-}
-#promise .promise-bottom img {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-#footer {
-  height: 310px;
-}
-.hot-city {
-  height: 120px;
-  width: 1200px;
-  margin: 0 auto;
-}
-.hot-city .hot {
-  width: 72px;
-  font: 700 18px "Microsoft YaHei";
-  float: left;
-  margin-right: 30px;
-}
-.hot-city .hot:after {
-  counter: "";
-  display: block;
-  clear: both;
-}
-.hot-city .city-list {
-  width: 1098px;
-  font: 200 16px "Microsoft YaHei";
-  color: #898989;
-  float: left;
-}
-.hot-city .city-list:after {
-  counter: "";
-  display: block;
-  clear: both;
-}
-.hot-city .city-list i {
-  display: inline-block;
-  font-style: normal;
-  width: 9%;
-  line-height: 30px;
-  text-align: center;
-}
-.partner-wrapper {
-  background: #f8f8f8;
-  overflow: hidden;
-}
-.partner-wrapper .partner-des {
-  width: 1200px;
-  margin: 20px auto;
-  color: #121212;
-  font: 700 18px "Microsoft YaHei";
-}
-.partner-wrapper .partner {
-  width: 1200px;
-  margin: 0 auto;
-}
-.partner-wrapper .partner li {
-  width: 120px;
-  height: 60px;
-  background: #fff;
-  margin-left: 12px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 100px;
-  float: left;
-}
-.partner-wrapper .partner li:after {
-  counter: "";
-  display: block;
-  clear: both;
-}
-.partner-wrapper .partner li:nth-child(9n+1) {
-  margin-left: 0;
-}
-.partner-wrapper .partner li img {
-  width: 100px;
-}
-.partner-wrapper .copyright {
-  width: 1200px;
-  margin: 10px auto;
-  font-size: 14px;
-  color: #757881;
 }

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+* em {
+  font-style: normal;
+}
+#sign-wrapper {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px #ccc solid;
+}
+#sign-wrapper input {
+  width: 298px;
+  height: 54px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#sign-wrapper button {
+  width: 298px;
+  height: 46px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#sign-wrapper .sign-logo {
+  width: 298px;
+}
+#sign-wrapper .sign-in {
+  width: 298px;
+  height: 54px;
+}
+#sign-wrapper .sign-in input {
+  width: 252px;
+}
+#sign-wrapper .sign-in .input-group-addon {
+  width: 40px;
+  height: 44px;
+}
+#sign-wrapper .sign-in .input-group-addon img {
+  width: 21px;
+  height: 24px;
+}
+#sign-wrapper .sign-tiaozhuan {
+  padding: 20px 20px 0 20px;
+  line-height: 30px;
+  overflow: hidden;
+}
+#sign-wrapper .sign-tiaozhuan .sign-tiaozhuan1 {
+  float: left;
+}
+#sign-wrapper .sign-tiaozhuan .sign-tiaozhuan1:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+#sign-wrapper .sign-tiaozhuan .sign-tiaozhuan2 {
+  float: right;
+}
+#sign-wrapper .sign-tiaozhuan .sign-tiaozhuan2:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
+#sign-wrapper .sign-tiaozhuan .sign-tiaozhuan3 {
+  margin-left: 160px;
+}
+#sign-wrapper .sign-tiaozhuan a {
+  color: #121212;
+}
+#sign-wrapper .sign-tiaozhuan a :hover {
+  text-decoration: solid;
+  color: #757881;
+}
+#sign-wrapper .form-inline-block .sign-yan {
+  margin-top: 20px;
+  position: relative;
+}
+#sign-wrapper .form-inline-block .sign-yan .sign-img {
+  background: url("../image/code.jpg") center no-repeat;
+  background-size: 100%;
+}
+#sign-wrapper .form-inline-block .sign-yan .sign-huoqu {
+  width: 96px;
+  height: 108px;
+  margin: 0;
+  font-size: 14px;
+  background: #bbc0c9;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#sign-wrapper .form-inline-block .sign-yan input {
+  width: 202px;
+}
+#sign-wrapper .form-inline-block .sign-new {
+  margin: 20px 0 -20px 0;
+}
+#sign-wrapper .form-inline-block .sign-check {
+  margin-top: 10px;
+}
+#sign-wrapper .form-inline-block .sign-check input {
+  width: 12px;
+  height: 12px;
+}

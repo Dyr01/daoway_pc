@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>到位-商家管理后台</title>
+  <link rel="stylesheet" href="../stylus/reset.css">
+  <link rel="stylesheet" href="../stylus/bootstrap.min.css">
+  <link rel="stylesheet" href="../stylus/sign.css">
+</head>
+<body>
+<div id="sign-wrapper">
+  <h1><img src="../image/houtai-logo.png" alt="" class="sign-logo"></h1>
+  <form class="form-inline-block">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="请输入手机号">
+    </div>
+    <div class="sign-yan input-group" >
+      <input type="text" readonly="readonly" class="sign-img" placeholder="">
+      <input type="text" class="form-control" placeholder="请输入图片中的内容">
+      <button type="submit" class="sign-huoqu btn btn-default">获取验证码</button>
+    </div>
+    <div class="sign-new input-group" >
+      <input type="text" class="sign-img" placeholder="请输入验证码">
+      <input type="text" class="form-control" placeholder="请输入新密码">
+    </div>
+    <br>
+    <label class="sign-check checkbox-inline">
+      <input type="checkbox" value="option1"><a href="reg.html">您确认并同意到位用户协议</a>
+    </label><br>
+    <button type="submit" class="sign-btn btn btn-primary">注册</button>
+  </form>
+  <div class="sign-tiaozhuan">
+    <div class="sign-tiaozhuan3"><a href="signin.html">已有账户？登录</a></div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</html>

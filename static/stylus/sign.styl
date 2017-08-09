@@ -1,0 +1,92 @@
+// 引入文件
+@import "mixins.styl"
+*
+  box-sizing border-box
+  em
+    font-style normal
+
+// 注册登录忘记密码公共样式
+#sign-wrapper
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px #ccc solid;
+  input
+    width 298px
+    height 54px
+    border 1px solid #ccc
+    border-radius 5px
+  button
+    width 298px
+    height 46px
+    margin-top 20px
+    font-size 20px
+  .sign-logo
+    width 298px
+  .sign-in
+    width 298px
+    height 54px
+    input
+      width 252px
+    .input-group-addon
+      width 40px
+      height 44px
+      img
+        width 21px
+        height 24px
+
+
+  .sign-tiaozhuan
+    padding 20px 20px 0 20px
+    line-height 30px
+    overflow hidden
+    .sign-tiaozhuan1
+      float left
+      clear-fixed()
+    .sign-tiaozhuan2
+      float right
+      clear-fixed()
+    .sign-tiaozhuan3
+      margin-left 160px
+    a
+      color #121212
+      :hover
+        text-decoration solid
+        color #757881
+// 忘记密码 注册
+#sign-wrapper
+  .form-inline-block
+    .sign-yan
+      margin-top 20px
+      position relative
+      .sign-img
+        background url("../image/code.jpg") center no-repeat
+        background-size 100%
+      .sign-huoqu
+        width 96px
+        height 108px
+        margin 0
+        font-size 14px
+        background #bbc0c9
+        position absolute
+        top 0
+        right  0
+      input
+        width 202px
+    .sign-new
+      margin 20px 0 -20px 0
+//注册
+#sign-wrapper
+  .form-inline-block
+    .sign-check
+      margin-top 10px
+      input
+        width 12px
+        height 12px
+
+
+
+
