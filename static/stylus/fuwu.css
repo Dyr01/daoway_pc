@@ -139,6 +139,11 @@ body {
   border: solid 1px #e5e5e5;
   overflow: hidden;
 }
+#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left:after {
+  counter: "";
+  display: block;
+  clear: both;
+}
 #fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type {
   height: 60px;
 }

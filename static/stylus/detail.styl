@@ -1,0 +1,291 @@
+// 引入文件
+@import "mixins.styl"
+//  赋值
+red1 = #e94840
+*
+  box-sizing border-box
+  em
+    font-style normal
+body
+  width 100%
+  color: #121212
+// 头部
+  #header
+    background-color #fff
+    position relative
+    border-bottom solid #e7e7e7 1px
+    .nav-transparent
+    //position fixed
+    //top 0
+    //left 0
+      .nav-default
+        width 1200px
+        height 71px
+        margin 0 auto
+        .nav-left
+          float left
+          height 65px
+          clear-fixed()
+          padding 15px 0
+        .nav-right
+          height 42px
+          margin-top 13px
+          float right
+          clear-fixed()
+          li
+            float left
+            line-height 20px
+            text-align center
+            clear-fixed()
+            padding 10px 15px
+            &:first-child
+              margin-right 50px
+              vertical-align top
+            &:last-child
+              margin-right 10px
+              a
+                padding 4px 6px
+                color #fff
+                background red1
+                border-radius 6px
+            a
+              font-weight bold
+              color #121212
+              span
+                font-weight bold
+                color #121212
+                vertical-align top
+                &.city:hover
+                  color red1
+              &:hover
+                color red1
+                transition .5s
+// 服务详情
+  #detail
+    background #f8f8f8
+    .detail-wrapper
+      width 1200px
+      margin 0 auto
+      overflow hidden
+      .detail-des
+        margin 30px auto 30px
+        color #121212
+        font 700 18px "Microsoft YaHei"
+        .detail-des-type
+          color #121212
+      .detail-list
+        margin-top 10px
+        overflow hidden
+        .detail-list-left
+          float left
+          width 960px
+          clear-fixed()
+          overflow hidden
+          .left-top
+            width 980px
+            height 220px
+            border solid 1px #e5e5e5
+            background #fff
+            img
+              width 158px
+              height 158px
+              margin 30px
+              float left
+              clear-fixed()
+            .left-list-des
+              display flex
+              height 140px
+              width 418px
+              float left
+              font-size 14px
+              clear-fixed()
+              margin 35px 0
+              justify-content space-between
+              flex-direction: column
+              span:first-child
+                font-size 18px
+              .new-price
+                :first-child
+                  font bold 18px "微软雅黑"
+                  color red1
+                :nth-child(2)
+                  color red1
+                  font-weight bold
+                :nth-child(3)
+                  color #757881
+                :last-child
+                  color #757881
+                  text-decoration line-through
+              .detail-youhui
+                display inline-block
+                width 88px
+                height 24px
+                font-size 12px
+                color red1
+                text-align center
+                line-height 20px
+                border 1px solid red1
+                border-radius 8px
+
+              span:last-child
+                :last-child
+                  color red1
+            .detail-erweima
+              float right
+              clear-fixed()
+              margin 30px 80px 0 0
+              text-align center
+              img
+                width 115px
+                height 115px
+                margin 0
+              p
+                font-size 16px
+                font-weight bold
+                line-height 30px
+                &:last-child
+                  color red1
+          .left-bottom
+            width 960px
+            padding 30px 20px
+            margin-top 10px
+            border solid 1px #e5e5e5
+            background #fff
+            font-size 14px
+            .left-bottom-title
+              width 66px
+              padding 5px
+              margin-top 10px
+              border-bottom 3px solid red1
+              font-weight 700
+            p
+              line-height 30px
+              margin-top 15px
+        .detail-list-right
+          width 230px
+          margin-left 10px
+          float left
+          background #ffffff
+          .right-top
+            height 356px
+            border solid 1px #e5e5e5
+            .right-des
+              height 60px
+              padding-left 10px
+              padding-top 20px
+              color #121212
+              font 700 20px "Microsoft YaHei"
+              border-bottom 1px solid #e5e5e5
+            .right-list-ser
+              text-align center
+              img
+                width 80px
+                height 80px
+                margin 30px auto 10px
+              .right-list-name
+                height 42px
+                line-height 42px
+                font bold 18px "微软雅黑"
+                color #121212
+                margin-bottom 20px
+              .right-list-x
+                text-align start
+                padding 10px
+                color #121212
+                span
+                  float right
+                  clear-fixed()
+                  color red1
+
+          .right-bottom
+            width 230px
+            height 290px
+            background url(../image/tuijianfuwushang_06.jpg) no-repeat center
+            text-align center
+            line-height 330px
+            margin-top 10px
+            img
+              width 130px
+              height 130px
+// promise
+  #promise
+    height 250px
+    padding 60px 0 50px
+    text-align center
+    .promise-top
+      height 90px
+      h2
+        font 800 30px "Microsoft YaHei"
+        padding 20px 0 8px
+        span
+          color red1
+      p
+        font-size 22px
+    .promise-bottom
+      height 50px
+      display flex
+      justify-content center
+      font-size 18px
+      div
+        padding 20px 35px 0 0
+        &:last-child
+          padding-right 0
+      img
+        vertical-align middle
+        margin-right 10px
+// footer
+  #footer
+    height 310px
+  //热门城市
+    .hot-city
+      height 120px
+      width 1200px
+      margin 0 auto
+      .hot
+        width 72px
+        font 700 18px "Microsoft YaHei"
+        float left
+        margin-right 30px
+        clear-fixed()
+      .city-list
+        width 1098px
+        font 200 16px "Microsoft YaHei"
+        color #898989
+        float left
+        clear-fixed()
+        i
+          display inline-block
+          font-style normal
+          width 9%
+          line-height 30px
+          text-align center
+    .partner-wrapper
+      background #f8f8f8
+      overflow hidden
+      .partner-des
+        width 1200px
+        margin 20px auto
+        color #121212
+        font 700 18px "Microsoft YaHei"
+      .partner
+        width 1200px
+        margin 0 auto
+        li
+          width 120px
+          height 60px
+          background #fff
+          margin-left 12px
+          margin-bottom 20px
+          text-align center
+          line-height 100px
+          float left
+          clear-fixed()
+          &:nth-child(9n+1)
+            margin-left 0
+          img
+            width 100px
+      .copyright
+        width 1200px
+        margin 10px auto
+        font-size 14px
+        color #757881

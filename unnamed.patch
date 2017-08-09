@@ -1,0 +1,1794 @@
+Index: static/stylus/fuwu.styl
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/stylus/fuwu.styl	(revision )
++++ static/stylus/fuwu.styl	(revision )
+@@ -0,0 +1,360 @@
++// 引入文件
++@import "mixins.styl"
++//  赋值
++red1 = #e94840
++*
++  box-sizing border-box
++  em
++    font-style normal
++body
++  width 100%
++  color: #121212
++// 头部
++  #header
++    background-color #fff
++    position relative
++    border-bottom solid #e7e7e7 1px
++    .nav-transparent
++    //position fixed
++    //top 0
++    //left 0
++      .nav-default
++        width 1200px
++        height 71px
++        margin 0 auto
++        .nav-left
++          float left
++          height 65px
++          clear-fixed()
++          padding 15px 0
++        .nav-right
++          height 42px
++          margin-top 13px
++          float right
++          clear-fixed()
++          li
++            float left
++            line-height 20px
++            text-align center
++            clear-fixed()
++            padding 10px 15px
++            &:first-child
++              margin-right 50px
++              vertical-align top
++            &:last-child
++              margin-right 10px
++              a
++                padding 4px 6px
++                color #fff
++                background red1
++                border-radius 6px
++            a
++              font-weight bold
++              color #121212
++              span
++                font-weight bold
++                color #121212
++                vertical-align top
++                &.city:hover
++                  color red1
++              &:hover
++                color red1
++                transition .5s
++// 服务
++  #fuwu
++    background #f8f8f8
++    .fuwu-wrapper
++      width 1200px
++      margin 0 auto
++      overflow hidden
++      .fuwu-des
++        margin 30px auto 30px
++        color #121212
++        font 700 18px "Microsoft YaHei"
++        .fuwu-des-type
++          color red1
++      .fuwu-type
++        font-size 16px
++        height 50px
++        border 1px solid #eaeaea
++        background #fff
++        li
++          float left
++          line-height 50px
++          margin 0 10px
++          clear-fixed()
++          a:link
++            color #000
++            &:hover
++              color red1
++          &.fuwu-type-acv
++            a:link
++              color red1
++          &.fuwu-type-first
++            margin 0 30px 0 60px
++            a
++              color #757881
++              &:hover
++                color #757881
++      .fuwu-list
++        margin-top 10px
++        overflow hidden
++        .fuwu-list-left
++          float left
++          width 960px
++          background #fff
++          border solid 1px #e5e5e5
++          overflow hidden
++          .fuwu-list-left-type
++            height 60px
++            ul
++              line-height 60px
++              li
++                float left
++                margin 0 20px
++                a
++                 color #121212
++              .fuwu-active
++                border-bottom 4px solid red1
++                a
++                  color red1
++              .fuwu-list-left-type-last
++                float right
++                clear-fixed()
++                font-size 12px
++                display flex
++                justify-content space-between
++                align-items center
++                a
++                  display inline-block
++                  margin 0 10px
++                  width 70px
++                  height 30px
++                  border solid 1px #e5e5e5
++                  line-height 30px
++                  text-align center
++                .page1
++                  color red1
++          .left-list
++            li
++              width 980px
++              height 200px
++              border-bottom solid 1px #e5e5e5
++              a
++                display inline-block
++                width 100%
++                height 100%
++                img
++                  width 140px
++                  height 140px
++                  margin 30px
++                  float left
++                  clear-fixed()
++                .left-list-des
++                  display flex
++                  height 140px
++                  width 418px
++                  float left
++                  clear-fixed()
++                  margin 35px 0
++                  justify-content space-between
++                  flex-direction: column
++                  span:nth-child(2n+2)
++                    color #757881
++                    font-size 14px
++                  span:first-child
++                    color #121212
++                    font-size 16px
++                  .new-price
++                    color red1
++                    font-size 14px
++                    :first-child
++                      font bold 18px "微软雅黑"
++                    :last-child
++                      margin-left 40px
++                      text-decoration line-through
++                    .old-price
++                      color #757881
++                      font-size 14px
++                  img
++                    width 18px
++                    height 17px
++                    margin 0 4px 0 0
++                    vertical-align middle
++                .fuwu-quickly
++                  width 60px
++                  height 30px
++                  margin 30px 60px 0 0
++                  border 1px solid red1
++                  border-radius 10px
++                  float right
++                  clear-fixed()
++                  font-size 12px
++                  text-align center
++                  line-height 15px
++                  :first-child
++                    display block
++                    height 15px
++                    background red1
++                    border-radius 9px 9px 0 0
++                    color #ffffff
++                  :last-child
++                    color red1
++                &:hover
++                  background #e5e5e5
++        .fuwu-list-right
++          width 230px
++          margin-left 10px
++          float left
++          border 1px solid #e5e5e5
++          background #ffffff
++          .right-des
++            height 60px
++            padding-left 10px
++            padding-top 20px
++            color #121212
++            font 700 20px "Microsoft YaHei"
++            border-bottom 1px solid #e5e5e5
++          .right-list
++            width 100%
++            li
++              height 200px
++              .baoguo
++                width 90%
++                margin 0 auto
++                text-align center
++                border-bottom 1px solid #e5e5e5
++                img
++                  width 70px
++                  height 70px
++                  margin 30px auto 10px
++                .right-list-name
++                  height 42px
++                  line-height 42px
++                  font bold 18px "微软雅黑"
++                  color #121212
++                .right-list-x
++                  height 46px
++                  line-height 46px
++                  font 200 14px "微软雅黑"
++                  color #929292
++              &:hover
++                background #e5e5e5
++      .fuwu-page-wrapper
++        width 960px
++        height 152px
++        line-height 152px
++        margin 0 auto
++        padding-top 40px
++        text-align center
++        .fuwu-page
++          display flex
++          .page-c
++            width 80px
++            height 30px
++            line-height 30px
++            border solid 1px #e5e5e5
++            color #121212
++          .fuwu-page-num
++            margin 0 10px
++            width 450px
++            height 30px
++            display flex
++            justify-content space-around
++            align-items center
++            .page-num
++              width 32px
++              height 30px
++              line-height 30px
++              border solid 1px #e5e5e5
++              background #ffffff
++              a
++                color #121212
++              &.acv, &:hover
++                display inline-block
++                background red1
++                transition .7s
++                a
++                  color #ffffff
++// promise
++  #promise
++    height 250px
++    padding 60px 0 50px
++    text-align center
++    .promise-top
++      height 90px
++      h2
++        font 800 30px "Microsoft YaHei"
++        padding 20px 0 8px
++        span
++          color red1
++      p
++        font-size 22px
++    .promise-bottom
++      height 50px
++      display flex
++      justify-content center
++      font-size 18px
++      div
++        padding 20px 35px 0 0
++        &:last-child
++          padding-right 0
++      img
++        vertical-align middle
++        margin-right 10px
++// footer
++  #footer
++    height 310px
++  //热门城市
++    .hot-city
++      height 120px
++      width 1200px
++      margin 0 auto
++      .hot
++        width 72px
++        font 700 18px "Microsoft YaHei"
++        float left
++        margin-right 30px
++        clear-fixed()
++      .city-list
++        width 1098px
++        font 200 16px "Microsoft YaHei"
++        color #898989
++        float left
++        clear-fixed()
++        i
++          display inline-block
++          font-style normal
++          width 9%
++          line-height 30px
++          text-align center
++    .partner-wrapper
++      background #f8f8f8
++      overflow hidden
++      .partner-des
++        width 1200px
++        margin 20px auto
++        color #121212
++        font 700 18px "Microsoft YaHei"
++      .partner
++        width 1200px
++        margin 0 auto
++        li
++          width 120px
++          height 60px
++          background #fff
++          margin-left 12px
++          margin-bottom 20px
++          text-align center
++          line-height 100px
++          float left
++          clear-fixed()
++          &:nth-child(9n+1)
++            margin-left 0
++          img
++            width 100px
++      .copyright
++        width 1200px
++        margin 10px auto
++        font-size 14px
++        color #757881
+\ No newline at end of file
+Index: static/html/fuwu.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/html/fuwu.html	(revision )
++++ static/html/fuwu.html	(revision )
+@@ -0,0 +1,872 @@
++<!DOCTYPE html>
++<html lang="zh-CN">
++<head>
++  <meta charset="utf-8">
++  <title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
++  <link rel="stylesheet" href="../js/reset.css">
++  <link rel="stylesheet" href="../stylus/fuwu.css">
++</head>
++<body>
++<div id="wrapper">
++  <!-- header -->
++  <header id="header">
++    <div class="nav-transparent">
++      <div class="nav-default">
++        <!-- logo -->
++        <div class="nav-left">
++          <a href="javascript:;">
++            <img src="../image/logo.png" alt="logo" class="logo"/>
++          </a>
++        </div>
++        <!-- 导航列表 -->
++        <div class="nav-right">
++          <ul>
++            <li>
++              <a href="javascript:;" class="position">
++                <img src="../image/citypoint.png" alt="定位"/>
++                <span class="showCity">北京</span>
++                <span class="city">切换城市</span>
++              </a>
++            </li>
++            <li>
++              <a href="javascript:;">首页</a>
++            </li>
++            <li>
++              <a href="javascript:;">下载APP</a>
++            </li>
++            <li>
++              <a href="javascript:;">服务商</a>
++            </li>
++            <li>
++              <a href="javascript:;">商家入驻</a>
++            </li>
++            <li>
++              <a href="javascript:;">关于我们</a>
++            </li>
++            <li>
++              <a href="javascript:;">商家登录</a>
++            </li>
++          </ul>
++        </div>
++      </div>
++    </div>
++  </header>
++  <!--服务商列表-->
++  <div id="fuwu">
++    <div class="fuwu-wrapper">
++      <div class="fuwu-des">
++        所有分类&nbsp;&nbsp;
++        <span>＞</span>&nbsp;&nbsp;
++        <a href="javascrpt:;"><span class="fuwu-des-type">家庭保洁</span></a>&nbsp;&nbsp;
++        <span>＞</span>
++      </div>
++      <div class="fuwu-type">
++        <ul>
++          <li class="fuwu-type-first"><a href="javascrpt:;">分类</a></li>
++          <li class="fuwu-type-acv"><a href="javascrpt:;">全部</a></li>
++          <li><a href="javascrpt:;">小时工</a></li>
++          <li><a href="javascrpt:;">开荒保洁</a></li>
++          <li><a href="javascrpt:;">擦玻璃</a></li>
++          <li><a href="javascrpt:;">深度保洁</a></li>
++          <li><a href="javascrpt:;">家居养护</a></li>
++          <li><a href="javascrpt:;">杀虫除螨</a></li>
++        </ul>
++      </div>
++      <div class="fuwu-list">
++        <div class="fuwu-list-left">
++          <div class="fuwu-list-left-type">
++            <ul>
++              <li class="fuwu-active"><a href="javascrpt:;">推荐排序</a></li>
++              <li><a href="javascrpt:;">销量高<img src="../image/fuwu_down2.jpg" alt=""></a></li>
++              <li><a href="javascrpt:;">好评多<img src="../image/fuwu_down2.jpg" alt=""></a></li>
++              <li><a href="javascrpt:;">上门快<img src="../image/fuwu_down2.jpg" alt=""></a></li>
++              <li><a href="javascrpt:;">价格低<img src="../image/fuwu_down2.jpg" alt=""></a></li>
++              <li class="fuwu-list-left-type-last">
++                <div><span class="page1">1</span><span>/28</span></div>
++                <a href="javascrpt:;"><p>上一页</p></a>
++                <a href="javascrpt:;"><p>下一页</p></a>
++              </li>
++            </ul>
++          </div>
++          <ul class="left-list">
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++            <a href="javascrpt:;">
++              <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++              <p class="left-list-des">
++                <span>家庭保洁</span>
++                <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++              </p>
++              <p class="fuwu-quickly">
++                <span>最快上门</span>
++                <span>2小时</span>
++              </p>
++            </a>
++          </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++            <li>
++              <a href="javascrpt:;">
++                <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                <p class="left-list-des">
++                  <span>家庭保洁</span>
++                  <span>家庭保洁服务，2小时起订。阿姨上门不带保洁工具，需用户自备...</span>
++                  <span class="new-price">
++                    <em>35</em>
++                    <em>元/小时</em>
++                    <em class="old-price">50元</em>
++                  </span>
++                  <span>
++                    <em><img src="../image/home1.png" alt="">云家政</em>
++                    <em>已售37255</em>
++                    <em>好评86%</em>
++                  </span>
++                </p>
++                <p class="fuwu-quickly">
++                  <span>最快上门</span>
++                  <span>2小时</span>
++                </p>
++              </a>
++            </li>
++          </ul>
++        </div>
++        <div class="fuwu-list-right">
++          <p class="right-des">服务商</p>
++          <ul class="right-list">
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++            <li>
++              <div class="baoguo">
++                <a href="javascript:;">
++                  <img src="../image/5cf8680f-0264-4686-ba05-145700db6063_thumb.jpg" alt="">
++                  <p class="right-list-name">云家政</p>
++                  <p class="right-list-x">
++                    <span>已成功接单29019</span>&nbsp;&nbsp;&nbsp;
++                    <span>好评率86%</span>
++                  </p>
++                </a>
++              </div>
++            </li>
++          </ul>
++        </div>
++      </div>
++      <div class="fuwu-page-wrapper">
++        <div class="fuwu-page">
++          <a href="javascript:;"><p class="page-c">＜上一页</p></a>
++          <ul class="fuwu-page-num">
++            <li class="page-num acv"><a href="javascript:;">1</a></li>
++            <li class="page-num"><a href="javascript:;">2</a></li>
++            <li class="page-num"><a href="javascript:;">3</a></li>
++            <li class="page-num"><a href="javascript:;">4</a></li>
++            <li class="page-num"><a href="javascript:;">5</a></li>
++            <li class="page-num"><a href="javascript:;">6</a></li>
++            <li class="page-num"><a href="javascript:;">7</a></li>
++            <li class="page-num"><a href="javascript:;">8</a></li>
++            <li class="page-num"><a href="javascript:;">9</a></li>
++            ...
++          </ul>
++          <a href="javascript:;"><p class="page-c">＜下一页</p></a>
++        </div>
++      </div>
++    </div>
++  </div>
++  <!-- promise -->
++  <div id="promise">
++    <div class="promise-top">
++      <h2>到位<span>服务</span>保障</h2>
++      <p>到位平台担保交易安全，交易未成功100%退款</p>
++    </div>
++    <div class="promise-bottom">
++      <div><img src="../image/anquan.jpg" alt="">优选服务</div>
++      <div><img src="../image/anquan.jpg" alt="">全程保障</div>
++      <div><img src="../image/anquan.jpg" alt="">安全无忧</div>
++    </div>
++  </div>
++  <!-- footers区域 -->
++  <footer id="footer">
++    <ul class="hot-city">
++      <li class="hot">热门城市</li>
++      <li class="city-list">
++        <i>北京</i><i>上海</i><i>广州</i><i>深圳</i><i>成都</i><i>天津</i><i>南京</i><i>杭州</i><i>重庆</i><i>苏州</i><i>武汉</i><i>长沙</i><i>济南</i><i>郑州</i><i>西安</i><i>沈阳</i><i>福州</i><i>厦门</i><i>南昌</i><i>合肥</i><i>宁波</i><i>无锡</i><i>青岛</i><i>大连</i><i>东莞</i><i>佛山</i><i>石家庄</i><i>哈尔滨</i><i>太原</i><i>昆明</i><i>贵阳</i><i>南宁</i><i>温州</i>
++      </li>
++    </ul>
++    <div class="partner-wrapper">
++      <div class="partner-des"><p>合作伙伴</p></div>
++      <ul class="partner">
++        <li onclick="link('http://bj.lairen.com/')"><img src="../image/lairen.jpg"></li>
++        <li onclick="link('http://www.emeidaojia.com/')"><img src="../image/meidao.jpg"></li>
++        <li onclick="link('http://www.qiaocat.com/')"><img src="../image/qiaomao.png"></li>
++        <li onclick="link('http://www.yueguanjia.com/')"><img src="../image/guanjia.jpg"></li>
++        <li onclick="link('http://weadoc.com/')"><img src="../image/shanxiu.jpg"></li>
++        <li onclick="link('http://www.580jz.cn/')"><img src="../image/jiazheng.png"></li>
++        <li onclick="link('http://www.51jiaxiu.com')"><img src="../image/jiaxiu.jpg"></li>
++        <li onclick="link('http://www.qinglaihealth.com')"><img src="../image/lidashi.jpg"></li>
++        <li onclick="link('http://www.xiujiadian.com')"><img src="../image/zuomu.jpg"></li>
++        <li onclick="link('http://www.kalading.com')"><img src="../image/kala.jpg"></li>
++        <li onclick="link('http://www.jiawu580.com')"><img src="../image/jiawu.png"></li>
++        <li onclick="link('http://www.hua1000.com/')"><img src="../image/hua.jpg"></li>
++        <li onclick="link('http://www.meidaojia.com')"><img src="../image/meidao.png"></li>
++        <li onclick="link('https://www.jinpaihushi.com')"><img src="../image/hushi.png"></li>
++        <li onclick="link('http://www.bee2home.com/')"><img src="../image/mifeng.jpg"></li>
++        <li onclick="link('http://www.hiweixiu.com')"><img src="../image/weixiu.jpg"></li>
++        <li onclick="link('http://www.jjg2016.com/')"><img src="../image/jiaji.jpg"></li>
++        <li onclick="link('http://www.haohushi.me')"><img src="../image/xiaohushi.jpg"></li>
++      </ul>
++      <div class="copyright"><p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p></div>
++    </div>
++  </footer>
++</div>
++
++</body>
++<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
++<script type="text/javascript">
++
++</script>
++</html>
+\ No newline at end of file
+Index: static/stylus/fuwu.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/stylus/fuwu.css	(revision )
++++ static/stylus/fuwu.css	(revision )
+@@ -0,0 +1,482 @@
++* {
++  box-sizing: border-box;
++}
++* em {
++  font-style: normal;
++}
++body {
++  width: 100%;
++  color: #121212;
++}
++#header {
++  background-color: #fff;
++  position: relative;
++  border-bottom: solid #e7e7e7 1px;
++}
++#header .nav-transparent .nav-default {
++  width: 1200px;
++  height: 71px;
++  margin: 0 auto;
++}
++#header .nav-transparent .nav-default .nav-left {
++  float: left;
++  height: 65px;
++  padding: 15px 0;
++}
++#header .nav-transparent .nav-default .nav-left:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#header .nav-transparent .nav-default .nav-right {
++  height: 42px;
++  margin-top: 13px;
++  float: right;
++}
++#header .nav-transparent .nav-default .nav-right:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#header .nav-transparent .nav-default .nav-right li {
++  float: left;
++  line-height: 20px;
++  text-align: center;
++  padding: 10px 15px;
++}
++#header .nav-transparent .nav-default .nav-right li:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#header .nav-transparent .nav-default .nav-right li:first-child {
++  margin-right: 50px;
++  vertical-align: top;
++}
++#header .nav-transparent .nav-default .nav-right li:last-child {
++  margin-right: 10px;
++}
++#header .nav-transparent .nav-default .nav-right li:last-child a {
++  padding: 4px 6px;
++  color: #fff;
++  background: #e94840;
++  border-radius: 6px;
++}
++#header .nav-transparent .nav-default .nav-right li a {
++  font-weight: bold;
++  color: #121212;
++}
++#header .nav-transparent .nav-default .nav-right li a span {
++  font-weight: bold;
++  color: #121212;
++  vertical-align: top;
++}
++#header .nav-transparent .nav-default .nav-right li a span.city:hover {
++  color: #e94840;
++}
++#header .nav-transparent .nav-default .nav-right li a:hover {
++  color: #e94840;
++  transition: 0.5s;
++}
++#fuwu {
++  background: #f8f8f8;
++}
++#fuwu .fuwu-wrapper {
++  width: 1200px;
++  margin: 0 auto;
++  overflow: hidden;
++}
++#fuwu .fuwu-wrapper .fuwu-des {
++  margin: 30px auto 30px;
++  color: #121212;
++  font: 700 18px "Microsoft YaHei";
++}
++#fuwu .fuwu-wrapper .fuwu-des .fuwu-des-type {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-type {
++  font-size: 16px;
++  height: 50px;
++  border: 1px solid #eaeaea;
++  background: #fff;
++}
++#fuwu .fuwu-wrapper .fuwu-type li {
++  float: left;
++  line-height: 50px;
++  margin: 0 10px;
++}
++#fuwu .fuwu-wrapper .fuwu-type li:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#fuwu .fuwu-wrapper .fuwu-type li a:link {
++  color: #000;
++}
++#fuwu .fuwu-wrapper .fuwu-type li a:link:hover {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-type li.fuwu-type-acv a:link {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-type li.fuwu-type-first {
++  margin: 0 30px 0 60px;
++}
++#fuwu .fuwu-wrapper .fuwu-type li.fuwu-type-first a {
++  color: #757881;
++}
++#fuwu .fuwu-wrapper .fuwu-type li.fuwu-type-first a:hover {
++  color: #757881;
++}
++#fuwu .fuwu-wrapper .fuwu-list {
++  margin-top: 10px;
++  overflow: hidden;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left {
++  float: left;
++  width: 960px;
++  background: #fff;
++  border: solid 1px #e5e5e5;
++  overflow: hidden;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type {
++  height: 60px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul {
++  line-height: 60px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul li {
++  float: left;
++  margin: 0 20px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul li a {
++  color: #121212;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-active {
++  border-bottom: 4px solid #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-active a {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-list-left-type-last {
++  float: right;
++  font-size: 12px;
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-list-left-type-last:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-list-left-type-last a {
++  display: inline-block;
++  margin: 0 10px;
++  width: 70px;
++  height: 30px;
++  border: solid 1px #e5e5e5;
++  line-height: 30px;
++  text-align: center;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .fuwu-list-left-type ul .fuwu-list-left-type-last .page1 {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li {
++  width: 980px;
++  height: 200px;
++  border-bottom: solid 1px #e5e5e5;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a {
++  display: inline-block;
++  width: 100%;
++  height: 100%;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a img {
++  width: 140px;
++  height: 140px;
++  margin: 30px;
++  float: left;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a img:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des {
++  display: flex;
++  height: 140px;
++  width: 418px;
++  float: left;
++  margin: 35px 0;
++  justify-content: space-between;
++  flex-direction: column;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des span:nth-child(2n+2) {
++  color: #757881;
++  font-size: 14px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des span:first-child {
++  color: #121212;
++  font-size: 16px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des .new-price {
++  color: #e94840;
++  font-size: 14px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des .new-price :first-child {
++  font: bold 18px "微软雅黑";
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des .new-price :last-child {
++  margin-left: 40px;
++  text-decoration: line-through;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des .new-price .old-price {
++  color: #757881;
++  font-size: 14px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .left-list-des img {
++  width: 18px;
++  height: 17px;
++  margin: 0 4px 0 0;
++  vertical-align: middle;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .fuwu-quickly {
++  width: 60px;
++  height: 30px;
++  margin: 30px 60px 0 0;
++  border: 1px solid #e94840;
++  border-radius: 10px;
++  float: right;
++  font-size: 12px;
++  text-align: center;
++  line-height: 15px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .fuwu-quickly:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .fuwu-quickly :first-child {
++  display: block;
++  height: 15px;
++  background: #e94840;
++  border-radius: 9px 9px 0 0;
++  color: #fff;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a .fuwu-quickly :last-child {
++  color: #e94840;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-left .left-list li a:hover {
++  background: #e5e5e5;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right {
++  width: 230px;
++  margin-left: 10px;
++  float: left;
++  border: 1px solid #e5e5e5;
++  background: #fff;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-des {
++  height: 60px;
++  padding-left: 10px;
++  padding-top: 20px;
++  color: #121212;
++  font: 700 20px "Microsoft YaHei";
++  border-bottom: 1px solid #e5e5e5;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list {
++  width: 100%;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li {
++  height: 200px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li .baoguo {
++  width: 90%;
++  margin: 0 auto;
++  text-align: center;
++  border-bottom: 1px solid #e5e5e5;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li .baoguo img {
++  width: 70px;
++  height: 70px;
++  margin: 30px auto 10px;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li .baoguo .right-list-name {
++  height: 42px;
++  line-height: 42px;
++  font: bold 18px "微软雅黑";
++  color: #121212;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li .baoguo .right-list-x {
++  height: 46px;
++  line-height: 46px;
++  font: 200 14px "微软雅黑";
++  color: #929292;
++}
++#fuwu .fuwu-wrapper .fuwu-list .fuwu-list-right .right-list li:hover {
++  background: #e5e5e5;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper {
++  width: 960px;
++  height: 152px;
++  line-height: 152px;
++  margin: 0 auto;
++  padding-top: 40px;
++  text-align: center;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page {
++  display: flex;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .page-c {
++  width: 80px;
++  height: 30px;
++  line-height: 30px;
++  border: solid 1px #e5e5e5;
++  color: #121212;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num {
++  margin: 0 10px;
++  width: 450px;
++  height: 30px;
++  display: flex;
++  justify-content: space-around;
++  align-items: center;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num {
++  width: 32px;
++  height: 30px;
++  line-height: 30px;
++  border: solid 1px #e5e5e5;
++  background: #fff;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num a {
++  color: #121212;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num.acv,
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num:hover {
++  display: inline-block;
++  background: #e94840;
++  transition: 0.7s;
++}
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num.acv a,
++#fuwu .fuwu-wrapper .fuwu-page-wrapper .fuwu-page .fuwu-page-num .page-num:hover a {
++  color: #fff;
++}
++#promise {
++  height: 250px;
++  padding: 60px 0 50px;
++  text-align: center;
++}
++#promise .promise-top {
++  height: 90px;
++}
++#promise .promise-top h2 {
++  font: 800 30px "Microsoft YaHei";
++  padding: 20px 0 8px;
++}
++#promise .promise-top h2 span {
++  color: #e94840;
++}
++#promise .promise-top p {
++  font-size: 22px;
++}
++#promise .promise-bottom {
++  height: 50px;
++  display: flex;
++  justify-content: center;
++  font-size: 18px;
++}
++#promise .promise-bottom div {
++  padding: 20px 35px 0 0;
++}
++#promise .promise-bottom div:last-child {
++  padding-right: 0;
++}
++#promise .promise-bottom img {
++  vertical-align: middle;
++  margin-right: 10px;
++}
++#footer {
++  height: 310px;
++}
++.hot-city {
++  height: 120px;
++  width: 1200px;
++  margin: 0 auto;
++}
++.hot-city .hot {
++  width: 72px;
++  font: 700 18px "Microsoft YaHei";
++  float: left;
++  margin-right: 30px;
++}
++.hot-city .hot:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++.hot-city .city-list {
++  width: 1098px;
++  font: 200 16px "Microsoft YaHei";
++  color: #898989;
++  float: left;
++}
++.hot-city .city-list:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++.hot-city .city-list i {
++  display: inline-block;
++  font-style: normal;
++  width: 9%;
++  line-height: 30px;
++  text-align: center;
++}
++.partner-wrapper {
++  background: #f8f8f8;
++  overflow: hidden;
++}
++.partner-wrapper .partner-des {
++  width: 1200px;
++  margin: 20px auto;
++  color: #121212;
++  font: 700 18px "Microsoft YaHei";
++}
++.partner-wrapper .partner {
++  width: 1200px;
++  margin: 0 auto;
++}
++.partner-wrapper .partner li {
++  width: 120px;
++  height: 60px;
++  background: #fff;
++  margin-left: 12px;
++  margin-bottom: 20px;
++  text-align: center;
++  line-height: 100px;
++  float: left;
++}
++.partner-wrapper .partner li:after {
++  counter: "";
++  display: block;
++  clear: both;
++}
++.partner-wrapper .partner li:nth-child(9n+1) {
++  margin-left: 0;
++}
++.partner-wrapper .partner li img {
++  width: 100px;
++}
++.partner-wrapper .copyright {
++  width: 1200px;
++  margin: 10px auto;
++  font-size: 14px;
++  color: #757881;
++}
+Index: static/stylus/services.styl
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/stylus/services.styl	(revision 242ae4e4f0fbddad24b9a0752adbec17da0a53fc)
++++ static/stylus/services.styl	(revision )
+@@ -1,6 +1,7 @@
+ // 引入文件
+ @import "mixins.styl"
+-
++//  赋值
++red1 = #e94840
+ *
+   box-sizing border-box
+ body
+Index: static/stylus/services.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- static/stylus/services.css	(revision 242ae4e4f0fbddad24b9a0752adbec17da0a53fc)
++++ static/stylus/services.css	(revision )
+@@ -56,7 +56,7 @@
+ #header .nav-transparent .nav-default .nav-right li:last-child a {
+   padding: 4px 6px;
+   color: #fff;
+-  background: red1;
++  background: #e94840;
+   border-radius: 6px;
+ }
+ #header .nav-transparent .nav-default .nav-right li a {
+@@ -69,10 +69,10 @@
+   vertical-align: top;
+ }
+ #header .nav-transparent .nav-default .nav-right li a span.city:hover {
+-  color: red1;
++  color: #e94840;
+ }
+ #header .nav-transparent .nav-default .nav-right li a:hover {
+-  color: red1;
++  color: #e94840;
+   transition: 0.5s;
+ }
+ #services {
+@@ -177,7 +177,7 @@
+   padding: 20px 0 8px;
+ }
+ #promise .promise-top h2 span {
+-  color: red1;
++  color: #e94840;
+ }
+ #promise .promise-top p {
+   font-size: 22px;
